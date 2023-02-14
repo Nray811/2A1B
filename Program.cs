@@ -28,13 +28,13 @@ namespace _2A1B
                 }
               
             }
-            string gm = Data[0] + Data[1] + Data[2] + Data[3];
-           
-            Console.WriteLine("猜的4個號碼為： ");
-            string guess="";        
+            string gm = Data[0] + Data[1] + Data[2] + Data[3];          
+            string guess="";
+            //Console.WriteLine($"答案是{gm}");
                 do
                 {
                     int a = 0, b = 0;
+                    Console.WriteLine("來猜數字囉");
                     guess = Console.ReadLine();
                     for (int i = 0; i < 4; i++)
                     {
@@ -56,13 +56,7 @@ namespace _2A1B
                 Console.WriteLine("你答對了");
                 Console.WriteLine("繼續玩請按y");
             } while(Console.ReadLine() == "y" );
-
-
-            Console.WriteLine($"電腦選號為:{gm}");
-            Console.WriteLine($"結果是{a}A{b}B");
-
         }
-
         }
         }
 
