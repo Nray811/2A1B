@@ -11,9 +11,10 @@ namespace _2A1B
         static void Main(string[] args)
         {
 
+            do
+            {
             Random r = new Random();
-            string[] Data = new string[4];
-            
+            string[] Data = new string[4];           
             for (int i = 0; i < 4; i++)
             {
                 Data[i] = r.Next(1, 10).ToString();
@@ -28,24 +29,34 @@ namespace _2A1B
               
             }
             string gm = Data[0] + Data[1] + Data[2] + Data[3];
-            Console.Write("猜的4個號碼為： ");
-            string guess=""; 
-            guess = Console.ReadLine();
-            int a = 0, b = 0;
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 4; j++)
+           
+            Console.WriteLine("猜的4個號碼為： ");
+            string guess="";        
+                do
                 {
-                    if (guess[i] == gm[j])
+                    int a = 0, b = 0;
+                    guess = Console.ReadLine();
+                    for (int i = 0; i < 4; i++)
                     {
-                        if (i == j)
+                        for (int j = 0; j < 4; j++)
                         {
-                            a++;
-                        }                           
-                        else b++;
+                            if (guess[i] == gm[j])
+                            {
+                                if (i == j)
+                                {
+                                    a++;
+                                }
+                                else b++;
+                            }
+                        }
+
                     }
-                }
-            }
+                    Console.WriteLine($"結果是{a}A{b}B");
+                } while ( guess != gm);
+                Console.WriteLine("你答對了");
+                Console.WriteLine("繼續玩請按y");
+            } while(Console.ReadLine() == "y" );
+
 
             Console.WriteLine($"電腦選號為:{gm}");
             Console.WriteLine($"結果是{a}A{b}B");
