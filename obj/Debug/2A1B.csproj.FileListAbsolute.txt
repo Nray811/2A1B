@@ -1,0 +1,8 @@
+D:\後端作業\2A1B\bin\Debug\2.exe.config
+D:\後端作業\2A1B\bin\Debug\2.exe
+D:\後端作業\2A1B\bin\Debug\2.pdb
+D:\後端作業\2A1B\obj\Debug\2A1B.csproj.AssemblyReference.cache
+D:\後端作業\2A1B\obj\Debug\2A1B.csproj.SuggestedBindingRedirects.cache
+D:\後端作業\2A1B\obj\Debug\2A1B.csproj.CoreCompileInputs.cache
+D:\後端作業\2A1B\obj\Debug\2.exe
+D:\後端作業\2A1B\obj\Debug\2.pdb
